@@ -1,0 +1,127 @@
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type="submit"] {
+  background-color: #04aa6d;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.contact-container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  padding-top: 40px;
+  display: flex;
+  justify-content: space-evenly;
+  height: 100%;
+}
+.form {
+  width: 400px;
+}
+.social-media {
+  width: 600px;
+  height: auto;
+  text-align: center;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+.fa-twitter {
+  background: #55acee;
+  color: white;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+.fa-github {
+  background-color: black;
+  color: white;
+}
+.end {
+  text-align: center;
+  padding-top: 0;
+  margin: 0;
+  height: 50px;
+  font-size: 16px;
+}
+@media only screen and (max-width: 600px) {
+  .contact-container {
+    display: grid;
+    padding-left: 50px;
+    font-size: 12px;
+  }
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+  }
+  .social-media {
+    padding-top: 50px;
+    padding-right: 175px;
+    height: auto;
+    text-align: center;
+  }
+  .end {
+    padding-right: 175px;
+  }
+}
+@media only screen and (max-width: 375px) {
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 90%;
+  }
+  .social-media {
+    padding-right: 250px;
+  }
+  .end {
+    padding-right: 200px;
+  }
+}
+@media only screen and (max-width: 350px) {
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 70%;
+  }
+  .social-media {
+    padding-right: 300px;
+  }
+  .end {
+    padding-right: 275px;
+  }
+}

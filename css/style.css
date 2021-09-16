@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0%;
+  padding: 0%;
+  height: 100%;
+  width: 100%;
+  font-family: "Glory", sans-serif;
+  font-size: 18px;
+  max-width: 100%;
+  min-width: 600px;
+  scroll-behavior: smooth;
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+  * {
+    box-sizing: border-box;
+  }
+  html,
+  body {
+    overflow-x: hidden;
+    position: fixed;
+  }
+}
